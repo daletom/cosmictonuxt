@@ -1,7 +1,7 @@
 <template>
-      <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+      <div class="mt-12 max-w-lg max-w-md mx-auto grid gap-5 lg:grid-cols-3 md:grid-cols-2 lg:max-w-none md:max-w-none">
         <div v-for="post in data" :key="post.id" class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-          <div class="flex-shrink-0">
+          <div class="flex-shrink-1">
             <nuxt-img
               class="h-48 w-full object-cover"
               :src="post.metadata.heroimage.imgix_url"
