@@ -1,0 +1,19 @@
+{
+  getObjects(
+    bucket_slug: "lgh-nuxtjs-cosmicjs-production",
+    read_key: "YdHz2vhutnI9kISsVYFMleEAM6J1IRaxbDISBByhDAbpnDXAu1",
+    input: {
+    limit: 20,
+    query: {
+      type: "posts"
+    }
+  }) {
+    objects {
+      title
+      content
+      id
+      slug
+      metadata
+    }
+  }
+}
